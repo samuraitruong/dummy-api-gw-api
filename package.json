@@ -1,0 +1,26 @@
+{
+  "name": "dummy-api-gw-api",
+  "version": "1.0.0",
+  "description": "Just a dummy express service with response api gateway format for testing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "docker build -t dummy-api-gw-api .",
+    "publish_docker": "npm run build "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuraitruong/dummy-api-gw-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuraitruong/dummy-api-gw-api/issues"
+  },
+  "homepage": "https://github.com/samuraitruong/dummy-api-gw-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
