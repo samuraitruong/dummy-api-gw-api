@@ -21,6 +21,7 @@
   "homepage": "https://github.com/samuraitruong/dummy-api-gw-api#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "winston": "^3.3.3"
   }
 }
