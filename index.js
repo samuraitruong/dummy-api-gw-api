@@ -40,7 +40,8 @@ app.all('*', function (req, res) {
     message: 'incoming request',
     headers: req.headers,
   });
-  const raw = req.headers['x-response-raw'] || req.query?.['x-response-raw'];
+  const raw =
+    req.headers['x-response-raw'] || (req.query && req.query['x-response-raw']);
   const body = {
     url: req.originalUrl,
     serverTime: new Date(),
